@@ -27,7 +27,7 @@ contadores[1].textContent = calculaTempo(tempoObjetivo2);
 contadores[2].textContent = calculaTempo(tempoObjetivo3);
 contadores[3].textContent = calculaTempo(tempoObjetivo4);
 
-function calculaTempo(tempoObjetivo) {
+      function calculaTempo(tempoObjetivo) {}
   let tempoAtual = new Date();
   let tempoFinal = tempoObjetivo - tempoAtual;
   let segundos = Math.floor(tempoFinal / 1000);
@@ -38,19 +38,21 @@ function calculaTempo(tempoObjetivo) {
   segundos %= 60;
   minutos %= 60;
   horas %= 24;
-  
-  return (
-  dias +
-  " dias " +
-  horas +
-  " horas " +
-  minutos +
-  " minutos " +
-  segundos  +
-  " segundos"
-);
-}
 
+  if (tempoFinal > 0) 
+    return (
+      dias +
+      " dias " +
+      horas +
+      " horas " +
+      minutos +
+      " minutos " +
+      segundos +
+      " segundos"
+   ); else {
+    {}
+    return "Prazo Finalizado";
+  }
 
 
 
