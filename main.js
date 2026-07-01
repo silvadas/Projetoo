@@ -39,7 +39,13 @@ segundos %= 60;
 minutos %= 60;
 horas %= 24;
 
-if (tempoFinal > 0)
+function comecaCronometro() {
+  atualizaCronometro();
+  setInterval(atualizaCronometro, 1000);
+}
+
+comecaCronometro();
+if (tempoFinal > 0) {
   return (
     dias +
     " dias " +
@@ -49,17 +55,7 @@ if (tempoFinal > 0)
     " minutos " +
     segundos +
     " segundos"
-  ); else {
-  { }
+  );
+} else {
   return "Prazo Finalizado";
 }
-
-function comecaCronometro() {
-  atualizaCronometro();
-  setInterval(atualizaCronometro, 1000);
-}
-
-comecaCronometro();
-
-
-
