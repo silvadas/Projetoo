@@ -1,3 +1,4 @@
+
 const botoes = document.querySelectorAll(".botao");
 const textos = document.querySelectorAll(".aba-conteudo");
 
@@ -48,7 +49,7 @@ function calculaTempo(tempoObjetivo) {
   segundos %= 60;
   minutos %= 60;
   horas %= 24;
-
+  
   // Usando Template Literals (as crases ``) para facilitar a leitura do retorno
   return `${dias} dias ${horas} horas ${minutos} minutos ${segundos} segundos`;
 }
