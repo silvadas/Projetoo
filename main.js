@@ -38,39 +38,17 @@ function calculaTempo(tempoObjetivo) {
   segundos %= 60;
   minutos %= 60;
   horas %= 24;
-  
+
   return (
-  dias +
-  " dias " +
-  horas +
-  " horas " +
-  minutos +
-  " minutos " +
-  segundos  +
-  " segundos"
-);
-}
-
-// 1. Pede para o usuário digitar o tempo em segundos
-let segundos = parseInt(prompt("Digite a quantidade de segundos para a contagem regressiva:"));
-
-// 2. Valida se o usuário digitou um número correto
-if (isNaN(segundos) || segundos <= 0) {
-    console.log("Por favor, insira um número válido maior que zero.");
-} else {
-    console.log(`Contagem regressiva iniciada: ${segundos} segundos.`);
-
-    // 3. Cria o intervalo que roda a cada 1 segundo (1000 milissegundos)
-    const contador = setInterval(() => {
-        segundos--; // Diminui 1 segundo
-
-        if (segundos > 0) {
-            console.log(`Tempo restante: ${segundos}s`);
-        } else {
-            console.log("💥 O tempo acabou!");
-            clearInterval(contador); // Interrompe o contador para não continuar rodando
-        }
-    }, 1000);
+    dias +
+    " dias " +
+    horas +
+    " horas " +
+    minutos +
+    " minutos " +
+    segundos +
+    " segundos"
+  );
 }
 
 
