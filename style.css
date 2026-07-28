@@ -28,7 +28,7 @@ body {
 .titulo-principal {
   text-align: left;
   width: 100%;
-  font-size: 32px;
+  font-size: 50px;
 }
 
 .titulo-principal span {
@@ -59,7 +59,7 @@ body {
 
 .ativo {
   background-color: var(--botao-ativo);
-  border-bottom: 4px solid var(--laranja);
+  border-bottom: 15px solid var(--laranja);
 }
 
 .abas-textos {
@@ -77,7 +77,7 @@ body {
 }
 
 .aba-conteudo-titulo-principal {
-  font-size: 28px;
+  font-size: 50px;
   text-align: center;
 }
 .aba-conteudo-titulo-secundario {
