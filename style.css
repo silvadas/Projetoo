@@ -93,34 +93,34 @@ body {
 }
 
 .contador-digito {
-  padding: 0 100px;
+  padding: 0 18px;
   text-align: center;
   min-width: 100px;
 }
 
 .contador-digito-numero {
-  font-size: 100px;
+  font-size: 80px;
   margin: 0;
 }
 
 .contador-digito-texto {
   color: var(--branco);
-  font-size: 100px;
+  font-size: 15px;
   margin: 0;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
 
   .botoes {
     display: flex;
   }
 
   .botao:first-child {
-    border-radius: 80px 0px 0 0;
+    border-radius: 60px 0px 0 0;
   }
 
   .botao:last-child {
-    border-radius: 0 80px 0 0;
+    border-radius: 0 60px 0 0;
   }
 
 }
